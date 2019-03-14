@@ -136,7 +136,7 @@ class NodeSync extends EventEmitter {
             log.debug('Check latest block number');
 
             return ethereumNode
-              .send('eth_getBlockByNumber', ['latest', false])
+              .send('eth_getBlockByNumber', ['0x0','latest', false])
               .then(ret2 => {
                 const blockResult = ret2.result;
                 const now = Math.floor(new Date().getTime() / 1000);

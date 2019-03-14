@@ -49,7 +49,7 @@ Template['elements_nodeInfo'].onCreated(function() {
   var template = this;
 
   // CHECK FOR NETWORK
-  web3.eth.getBlock(0, function(e, res) {
+  web3.eth.getBlock(0, 0, function(e, res) {
     if (!e) {
       const network = Helpers.detectNetwork(res.hash);
       TemplateVar.set(template, 'network', network.type);

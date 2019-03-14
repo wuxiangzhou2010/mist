@@ -20,7 +20,7 @@ var checkNetworkType = function(template) {
   console.trace('Check network type...');
 
   try {
-    web3.eth.getBlock(0, function(e, res) {
+    web3.eth.getBlock(0, 0, function(e, res) {
       console.trace('Get block 0', e, res);
 
       if (e) {
