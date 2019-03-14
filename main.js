@@ -164,7 +164,7 @@ async function onReady() {
   enableSwarmProtocol();
 
   if (!Settings.inAutoTestMode) {
-    await UpdateChecker.run();
+    // await UpdateChecker.run();
   }
 
   ipcProviderBackend.init();
