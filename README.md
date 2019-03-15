@@ -38,7 +38,8 @@ For updating simply download the new version and copy it over the old one (keep 
 In order to install from .zip files, please install `libgconf2-4` first:
 
 ```bash
-apt-get install libgconf2-4
+sudo apt install libgconf2-4
+sudo apt install build-essential
 ```
 
 ### Config folder
@@ -209,7 +210,7 @@ Linux deps:
 $ brew install gnu-tar libicns graphicsmagick xz
 ```
 
-Build for windows on linux
+Build for windows on Linux
 - [install-wine-on-ubuntu-18-04-bionic-beaver-linux](https://linuxconfig.org/install-wine-on-ubuntu-18-04-bionic-beaver-linux)
 
 ```sh
@@ -217,6 +218,11 @@ sudo dpkg --add-architecture i38
 sudo apt install wine64
 sudo apt install wine32
 wine --version
+```
+
+Build Linux 32bits version
+``` sh
+sudo apt-get install gcc-multilib g++-multilib
 ```
 
 #### Generate packages
