@@ -78,7 +78,7 @@ $ yarn global add gulp
 Now you're ready to initialise Mist for development:
 
 ```bash
-$ git clone https://github.com/ethereum/mist.git
+$ git clone https://github.com/wuxiangzhou2010/mist.git
 $ cd mist
 $ yarn
 ```
@@ -207,6 +207,16 @@ Linux deps:
 
 ```bash
 $ brew install gnu-tar libicns graphicsmagick xz
+```
+
+Build for windows on linux
+- [install-wine-on-ubuntu-18-04-bionic-beaver-linux](https://linuxconfig.org/install-wine-on-ubuntu-18-04-bionic-beaver-linux)
+
+```sh
+sudo dpkg --add-architecture i38
+sudo apt install wine64
+sudo apt install wine32
+wine --version
 ```
 
 #### Generate packages
